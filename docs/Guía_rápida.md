@@ -4,7 +4,7 @@ Esta guía es un recurso de *onboarding* centrado en las decisiones de **criteri
 
 ---
 
-## 1. ⚙️ Triage Rápido: ¿Cuándo Usar GVM?
+## 1. ⚙️ Triaje Rápido: ¿Cuándo Usar GVM?
 
 GVM no es para todas las tareas. Su fortaleza es la **auditoría amplia, histórica y continua** (Vulnerability Management), no el testing puntual.
 
@@ -42,11 +42,11 @@ La elección del *Scan Config* es crítica para la eficiencia y para reducir los
 
 ---
 
-## 4. 🗂️ Priorización (Triage): Más Allá del CVSS
+## 4. 🗂️ Priorización (Triaje): Más Allá del CVSS
 
 El valor real del analista reside en aplicar **Criterio de Negocio**, no solo el puntaje técnico.
 
-### Filtros Esenciales para el Triage Rápido
+### Filtros Esenciales para el Triaje Rápido
 
 Utiliza los filtros avanzados en la interfaz de GVM para aislar las vulnerabilidades críticas accionables.
 

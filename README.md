@@ -4,7 +4,7 @@
 
 Este repositorio contiene un **recurso técnico profesional** que va más alla de la documentación básica de **Greenbone Vulnerability Management (GVM)**, anteriormente conocido como OpenVAS.
 
-El objetivo de esta guía es proporcionar a analistas un **flujo de trabajo optimizado, eficiente y orientado al criterio técnico** que abarca desde la preparación del entorno hasta el análisis y priorización (triage) de resultados. Este recurso servirá como *portfolio* que demuestra experiencia práctica en la *Gestión del Ciclo de Vida de la Vulnerabilidad**
+El objetivo de esta guía es proporcionar a analistas un **flujo de trabajo optimizado, eficiente y orientado al criterio técnico** que abarca desde la preparación del entorno hasta el análisis y priorización (triaje) de resultados. Este recurso servirá como *portfolio* que demuestra experiencia práctica en la *Gestión del Ciclo de Vida de la Vulnerabilidad**
 
 ---
 
@@ -22,7 +22,7 @@ El objetivo de esta guía es proporcionar a analistas un **flujo de trabajo opti
     3.3. Uso de credenciales (El escaneo autenticado obligatorio)
 4. [Análisis y Priorización de Reportes](#4-análisis-y-priorización-de-reportes-el-valor-del-analista)
     4.1. Filtros y búsquedas avanzadas (CheatSheet)
-    4.2. El proceso del triage y la gestión de falsos positivos
+    4.2. El proceso del triaje y la gestión de falsos positivos
 5. [Integración y Automatización con la API](#5-integración-y-automatización-con-la-api)
     5.1. Extracción de datos para reporting
     5.2. Automatización con 'gvm-tools
@@ -37,7 +37,7 @@ Este repositorio es un recurso técnico creado por analistas para analistas. Su 
 | :--- | :--- | :--- | :--- |
 | **Nmap** | Descubrimiento de red, mapeo de puertos y servicios. | Reducción de objetivos. | GVM va más allá con la prueba de vulnerabilidades específicas (NVT) y la auditoría. |
 | **Metasploit** | Explotación de vulnerabilidades conocidas. | Prueba de concepto (PoC) activa. | GVM genera un **informe de auditoría** (referencias CVE/CVSS, solución) para informar la fase de explotación. |
-| **GVM (OpenVAS)** | Escaneo no invasivo, gestión de *feeds* (NVT), reporte y *triage*. | Auditoría continua, *compliance* y gestión del riesgo. | GVM proporciona la **visión de auditoría completa** y la gestión del ciclo de vida de la vulnerabilidad. |
+| **GVM (OpenVAS)** | Escaneo no invasivo, gestión de *feeds* (NVT), reporte y *triaje*. | Auditoría continua, *compliance* y gestión del riesgo. | GVM proporciona la **visión de auditoría completa** y la gestión del ciclo de vida de la vulnerabilidad. |
 
 ## 1.2. Propósito de Esta Guía: Criterio Técnico y Eficiencia
 
@@ -194,11 +194,11 @@ severity > 7.0 and apply_override=0
 apply_override=1
 ```
 
-### 4.2. El Proceso del Triage y la Gestión de Falsos Positivos
+### 4.2. El Proceso del Triaje y la Gestión de Falsos Positivos
 
-El **Triage** es el proceso de verificación para garantizar que solo se reportan vulnerabilidades *reales y accionables*.
+El **Triaje** es el proceso de verificación para garantizar que solo se reportan vulnerabilidades *reales y accionables*.
 
-**Flujo de Trabajo de Triage (Lista):**
+**Flujo de Trabajo de Triaje (Lista):**
 1.  **Reporte Bruto:** Exportar o filtrar hallazgos de severidad alta/crítica.
 2.  **Verificación Manual:** Validar el hallazgo usando herramientas externas (*Nmap, cURL, Burp Suite, Explotación Manual*).
 3.  **Decisión:**

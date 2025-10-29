@@ -4,7 +4,7 @@ Usar la sintaxis de filtro de la interfaz web (GSA) en la sección "Results" par
 
 | Objetivo del Filtro | Sintaxis del Filtro | Comentario Técnico |
 | :--- | :--- | :--- |
-| **Priorizar Triage** | `severity > 7.0 and qod > 70%` | Muestra solo hallazgos de alta o crítica severidad, con una **Calidad de Detección (QoD)** superior al 70%. **Obligatorio** para reducir falsos positivos. |
+| **Priorizar Triaje** | `severity > 7.0 and qod > 70%` | Muestra solo hallazgos de alta o crítica severidad, con una **Calidad de Detección (QoD)** superior al 70%. **Obligatorio** para reducir falsos positivos. |
 | **Vulnerabilidades Activas** | `apply_override=0` | Filtra todos los hallazgos que han sido justificados o desestimados (Override). Muestra solo las vulnerabilidades que **el analista debe abordar**. |
 | **Falsos Positivos** | `apply_override=1` | Muestra todas las excepciones y riesgos aceptados. Útil para auditoría y revisión de la política de excepciones. |
 | **Por Servidor Web** | `asset: "nombre_del_target"` | Busca resultados para un *Target* específico (ej. `asset: "Web Server Prod"`) para centrar el análisis. |
